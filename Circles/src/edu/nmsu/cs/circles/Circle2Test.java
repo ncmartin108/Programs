@@ -20,7 +20,7 @@ public class Circle2Test    {
    @Before
    public void setup()    {
       System.out.println("\nTest starting...");
-      circle2 = new Circle2(1, 2, 3);
+      circle2 = new Circle2(1, 1, 3);
    }
    
    //
@@ -39,7 +39,7 @@ public class Circle2Test    {
       Point p;
       System.out.println("Running test simpleMove.");
       p = circle2.moveBy(1, 1);
-      Assert.assertTrue(p.x == 2 && p.y == 3);
+      Assert.assertTrue(p.x == 2 && p.y == 2);
    }
    
    //
@@ -50,7 +50,18 @@ public class Circle2Test    {
       Point p;
       System.out.println("Running test simpleMoveNeg.");
       p = circle2.moveBy(-1, -1);
-      Assert.assertTrue(p.x == 0 && p.y == 1);
+      Assert.assertTrue(p.x == 0 && p.y == 0);
+   }
+   
+   //
+   // Test for movement only along x-axis and not y.
+   //
+   @Test
+   public void moveOnlyX()   {
+      Point p;
+      System.out.println("Running test moveOnlyX.");
+      p = circle2.moveBy(5,0);
+      Assert.assertTrue(p.x == 6 && p.y == 1);
    }
    
 }

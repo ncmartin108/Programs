@@ -72,7 +72,6 @@
 			
 			<test name="edu.nmsu.cs.circles.Circle1Test" haltonfailure="no" todir="${test.dir}" outfile="result1">
 				<formatter type="plain" />
-				<formatter type="xml" />
 			</test>
 			
 		</junit>
@@ -89,7 +88,6 @@
 			
 			<test name="edu.nmsu.cs.circles.Circle2Test" haltonfailure="no" todir="${test.dir}" outfile="result2">
 				<formatter type="plain" />
-				<formatter type="xml" />
 			</test>
 			
 		</junit>

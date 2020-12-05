@@ -4,7 +4,7 @@ public class Circle2 extends Circle
 {
 
  public Circle2(double x, double y, double radius)    {
-  //Error in the source code. The x and y are transposed.
+  //Error in the source code. The x and y were transposed.
     super(x, y, radius);
  }
 
