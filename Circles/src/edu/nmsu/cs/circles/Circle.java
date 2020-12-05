@@ -34,7 +34,13 @@ public abstract class Circle    {
     * @return the new radius
     **/
    public double scale(double factor)    {
-      radius = radius + factor;
+      // This method contained an error. It was changed to properly resize the circle.
+      if (factor < 1)  {
+         radius = radius + (radius * factor);
+      }
+      else   { 
+         radius = radius * factor;
+      }
       return radius;
    }
    
