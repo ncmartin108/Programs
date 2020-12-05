@@ -94,7 +94,7 @@
 	</target>
 	
 	<!-- Run JUnit Tests on Both Circle1 anc Circle2 -->
-	<target name="test" depends="compile,testCircle1,testCircle2">
+	<target name="test" depends="clean,compile,testCircle1,testCircle2">
 	</target>
 	
 </project>
